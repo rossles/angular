@@ -4,7 +4,7 @@
 <div>
     <h3>Loved Tracks</h3>
     <ul ng-show="lovedTracks.length > 0">
-        <li ng-repeat="track in lovedTracks | limitTo: 5 ">
+        <li ng-repeat="track in lovedTracks | limitTo : 10">
             <img ng-src="{{ track.image[0]['#text'] }}" /> {{ track.artist.name }} - {{ track.name }}
         </li>
     </ul>
@@ -12,5 +12,10 @@
 
 
 <div>
-    <h3></h3>
+    <h3>Most played</h3>
+    <ul ng-show="mostPlayedTracks.length > 0">
+        <li ng-repeat="track in mostPlayedTracks | orderBy: '-playcount' | limitTo: 20">
+            <img ng-src="{{ track.image[0]['#text'] }}" /> <b>[{{ track.artist.name }}]</b> {{ track.name }} - <b>{{ track.playcount }}</b>
+        </li>
+    </ul>
 </div>
