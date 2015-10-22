@@ -3,4 +3,4 @@
 /.tmp
 /.sass-cache
 /bower_components
-/app/scripts/constants/constants.js
+/app/scripts/constants/constants.filled.js

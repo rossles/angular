@@ -2,9 +2,15 @@
 
 
 <div>
+    <h3>Loved Tracks</h3>
     <ul ng-show="lovedTracks.length > 0">
-        <li ng-repeat="track in lovedTracks | limitTo: 15 ">
+        <li ng-repeat="track in lovedTracks | limitTo: 5 ">
             <img ng-src="{{ track.image[0]['#text'] }}" /> {{ track.artist.name }} - {{ track.name }}
         </li>
     </ul>
+</div>
+
+
+<div>
+    <h3></h3>
 </div>

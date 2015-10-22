@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name testerApp.controller:AboutCtrl
+ * @name testerApp.controller:LovedTracksCtrl
  * @description
- * # AboutCtrl
+ * # LovedTracksCtrl
  * Controller of the testerApp
  */
 angular.module('testerApp')
